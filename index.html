@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather for today</title>
+	<link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+	<h1>Weather for today!</h1>
+	<div class="input">
+		<div class="entering-city" type="text">
+
+			<input type="text" placeholder="Entering city" id='entering'>
+			<div class="error"></div>
+		</div>
+		<button class="button">Click me or enter!</button>
+	</div>
+	<div class="weather-in-city">
+		<div class="header-information">
+			<h3 class="city-name"></h3>
+			<span class="coord"></span>
+			<span class="weather"></span>
+			<img src="" alt="" class="image">
+		</div>
+		<ul>
+			<li>Temperature:<span class="temp"></span> °C</li>
+			<li>Pressure:<span class="pressure"> hPa</span></li>
+			<li>Humidity:<span class="humidity"> %</span></li>
+			<li>Wind speed:<span class="wind">Meter/Sec</span></li>
+			<li>Cloudiness:<span class="cloud"></span> %</li>
+		</ul>
+	</div>
+	<script src="Js/model.js"></script>
+	<script src="Js/view.js"></script>
+</body>
+</html>
